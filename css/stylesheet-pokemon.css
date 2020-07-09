@@ -1,0 +1,240 @@
+@font-face{
+    font-family:"LatoBold";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: bold;
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:"LatoNormal";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:"LatoItalic";
+    font-style: italic;
+    font-stretch: normal;
+    font-weight: normal;
+    src: url('../fonts/Lato-Italic.ttf') format('trueType');
+}
+
+
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+
+footer{
+    background-color: #AAA;
+    display: block;
+    height: 100px;
+    width:100%
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: block;
+    padding-top:100px;
+}
+
+
+header{
+	background-color:#AAA;
+	display: block;
+    height: 100px;
+    text-decoration:none;
+}
+
+ul{
+	text-decoration:none;
+	float:right;
+
+}
+
+.mainpicture{
+    width: 50%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.copyright{
+    text-align: center;
+    padding-top:20px;
+}
+
+
+nav ul li>a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+main>h1{
+    font-family: LatoBold; 
+    padding-block-start: 100px; 
+    text-align: center;
+}
+
+.photo{
+	padding-top:0px;
+}
+
+.lien{
+	padding-top:30px;
+}
+
+a{
+	padding:0.5em;
+	text-decoration:none;
+	height:30px;
+    color:#FFF;
+    font-family: 'LatoBold';
+	font-size: 18px;
+}
+
+a:hover{
+	color:cyan; 
+	text-decoration:underline;
+}
+
+form{
+    font-family: LatoNormal;
+    text-align:center;
+    
+}
+
+input{
+    width: 49%;
+    border-radius: 4px;
+    margin-right: 1%; 
+    padding: 16px;
+    font-size: 20px;
+    font-family: LatoBold;
+    margin-bottom: 20px;
+}
+
+
+form label{
+    padding-left: 185px;
+    font-family: LatoNormal; 
+    font-size: 20px;
+}
+
+
+input:not(.image){
+    border: gray solid 2px; 
+    border-radius: 5px;
+    display: inline-block;
+}
+
+input:focus{
+    border-color: lime; 
+}
+
+.photo{
+	padding-left:80px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    font-family: 'LatoBold';
+}
+
+
+/* Form */ 
+.send{
+    background-color: #4CAF50;
+    color: white; 
+}
+label{
+    font-family: 'LatoNormal'; 
+}
+
+.headertext{
+    text-align: center;
+    font-family: LatoBold; 
+    font-size: 45px;
+}
+
+
+
+/* Account */ 
+div h2{
+    font-family:LatoNormal; 
+    font-size: 25px; 
+    font-style: bold;
+}
+
+.topwrapper{
+    padding-left: 90px;
+}
+
+
+/*Collection */
+
+
+
+
+.parentcollection{
+    width: 30%;
+    display:inline-block;
+    vertical-align: top;
+    height: 50%;
+    font-size: 0;
+}
+
+.namepokemon{
+    font-weight: bold;
+}
+
+.collection h2{
+    font-size: 18px;
+}
+
+
+.collection {
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto;
+}
+
+.pokemon{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.column img{
+    max-width: 100%;
+}
+
+.column h2{
+    margin: 0;
+}
